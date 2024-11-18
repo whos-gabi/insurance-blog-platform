@@ -1,0 +1,1 @@
+//functii generale de acces la baza de date
