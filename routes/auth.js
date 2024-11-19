@@ -17,7 +17,7 @@ router.post('/autentificare-admin', async (req, res) => {
             return res.status(200).json({token});
         }
         else{
-            return res.status(400).json({ message : "Nume de utilizator sau parola incorecta"})
+            return res.status(400).json({ mesaj : "Nume de utilizator sau parola incorecta"})
         }
     }
     catch(error){
