@@ -11,7 +11,7 @@ router.post('/autentificare-admin', async (req, res) => {
 
     try{
 
-        if( username === process.env.ADMIN_USERNAME && sha256(parola) === process.env.ADMIN_PASSWORD) {// ADMIN_PASSWORD ar trebui sa fie incriptata 
+        if( username === process.env.ADMIN_USERNAME && sha256(parola) === process.env.ADMIN_PASSWORD) { // ADMIN_PASSWORD ar trebui sa fie incriptata 
             const token = jwt.sign( username , process.env.JWT_KEY);
     
             return res.status(200).json({token});
