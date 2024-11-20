@@ -1,0 +1,16 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header', { req: req }) %>
+
+    <div class="container my-3">
+        <%- include(path) %>
+    </div>
+
+    <%- include('partials/footer') %>
+</body>
+</html>
